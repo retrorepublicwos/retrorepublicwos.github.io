@@ -1,0 +1,45 @@
+body {
+    background-color: cornflowerblue;
+}
+
+.flex-container {
+    display: flex;
+}
+
+#title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+header {
+    background-color: rgb(18, 89, 159);
+    margin:1px;
+    border-radius: 10px;
+    width: calc(100% - 20px);
+    position: fixed;
+}
+
+nav {
+    display: flex; /* Use flexbox to arrange links in a row */
+    margin-left: 10px; /* Space between the title and links */
+}
+
+nav a {
+    color: white; 
+    text-decoration: none;
+    margin-left: 10px; 
+    margin-bottom: 10px;
+    margin-top: 0px;
+    background-color: rgb(112, 112, 255);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+nav a:first-child {
+    margin-left: 0;
+}
+
+nav a:hover {
+    background-color: rgb(93, 93, 255);
+}
