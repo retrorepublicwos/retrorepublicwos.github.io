@@ -10,15 +10,26 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     margin-left: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+#title a {
+    color: black;
+    text-decoration: none;
 }
 
 header {
     background-color: rgb(18, 89, 159);
-    margin:1px;
-    border-radius: 10px;
-    width: calc(100% - 20px);
-    position: fixed;
+    margin: 0; /* Remove margin to prevent shifting */
+    border-radius: 0px;
+    width: 100%;
+    position: fixed; /* Keep the header fixed at the top */
+    top: 0; 
+    left: 0; /* Align it to the left */
+    z-index: 1000; /* Ensure it stays above other content */
 }
+
 
 nav {
     display: flex; /* Use flexbox to arrange links in a row */
@@ -42,4 +53,14 @@ nav a:first-child {
 
 nav a:hover {
     background-color: rgb(93, 93, 255);
+}
+
+.content-pane {
+    background-color: whitesmoke;
+    margin: 10% auto; 
+    height: 80%;
+    width: 90%;
+    padding: 10px; 
+    margin-top: 120px; 
+    border-radius: 5px;
 }
